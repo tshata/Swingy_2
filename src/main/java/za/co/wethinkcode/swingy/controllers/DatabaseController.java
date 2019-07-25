@@ -10,13 +10,16 @@ public class DatabaseController {
     public static void connect(){
         Connection conn = null;
         try{
+            Class.forName("org.sqlite.JDBC");
             //db parameters
             String url = "jdbc:sqlite:swingy.db";
             conn = DriverManager.getConnection(url);
             System.out.println("Connected successfully");
         }catch(SQLException e){
             System.out.println(e.getMessage());
-        }finally {
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } finally {
             try{
                 if(conn != null){
                     conn.close();
