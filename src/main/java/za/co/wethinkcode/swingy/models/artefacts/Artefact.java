@@ -1,8 +1,13 @@
 package za.co.wethinkcode.swingy.models.artefacts;
 
 public abstract class Artefact {
-    private int value;
-    private String name;
+    protected int value;
+    protected String name;
+    protected int id;
+
+    protected Artefact(int id) {
+        this.id = id;
+    }
 
     public abstract int increaseValue(Artefact name);
 

@@ -1,13 +1,29 @@
 package za.co.wethinkcode.swingy.models.entities;
 
+import za.co.wethinkcode.swingy.models.artefacts.Artefact;
+
 public abstract class Hero implements Entity {
 
-    private String name;
-    private String rank;
-    private int level;
-    private int attack;
-    private int defence;
-    private int hitPoints;
+    protected String name;
+    protected String rank;
+    protected int level;
+    protected int attack;
+
+    protected int defence;
+    protected int hitPoints;
+    protected Artefact artefact;
+    protected int id;
+
+    protected Hero(String name, String rank, int level, int attack, int defence, int hitPoints, Artefact artefact, int id) {
+        this.name = name;
+        this.rank = rank;
+        this.level = level;
+        this.attack = attack;
+        this.defence = defence;
+        this.hitPoints = hitPoints;
+        this.artefact = artefact;
+        this.id = id;
+    }
 
     public void fight() {
 
@@ -17,7 +33,7 @@ public abstract class Hero implements Entity {
 
     }
 
-    public void pickUpArtefact() {
+    public void pickUpArtefact(Artefact artefact) {
 
     }
 

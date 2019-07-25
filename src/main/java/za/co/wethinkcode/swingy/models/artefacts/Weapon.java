@@ -1,10 +1,14 @@
 package za.co.wethinkcode.swingy.models.artefacts;
 
-import za.co.wethinkcode.swingy.models.artefacts.Artefact;
-
 public class Weapon extends Artefact {
+
+
+    protected Weapon(int id) {
+        super(id);
+    }
+
     @Override
-    public int increaseValue() {
+    public int increaseValue(Artefact name) {
         return 0;
     }
 }
