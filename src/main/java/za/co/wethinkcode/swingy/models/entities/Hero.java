@@ -2,6 +2,8 @@ package za.co.wethinkcode.swingy.models.entities;
 
 import za.co.wethinkcode.swingy.models.artefacts.Artefact;
 
+import java.awt.*;
+
 public abstract class Hero implements Entity {
 
     protected String name;
@@ -37,4 +39,7 @@ public abstract class Hero implements Entity {
 
     }
 
+    public abstract void update();
+
+    public abstract void render(Graphics g);
 }
