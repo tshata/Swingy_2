@@ -4,6 +4,7 @@ za/co/wethinkcode/swingy/models/entities/SuperHero.class
 za/co/wethinkcode/swingy/controllers/State.class
 za/co/wethinkcode/swingy/views/View.class
 za/co/wethinkcode/swingy/controllers/Game$1.class
+za/co/wethinkcode/swingy/views/GUI/GUI$Main.class
 za/co/wethinkcode/swingy/models/entities/Entity.class
 za/co/wethinkcode/swingy/App.class
 za/co/wethinkcode/swingy/controllers/SpriteSheet.class
@@ -20,6 +21,7 @@ za/co/wethinkcode/swingy/models/artefacts/Weapon.class
 za/co/wethinkcode/swingy/models/artefacts/Helm.class
 za/co/wethinkcode/swingy/controllers/ImageLoader.class
 za/co/wethinkcode/swingy/models/entities/MiniEnemies.class
+za/co/wethinkcode/swingy/views/GUI/GridMap.class
 za/co/wethinkcode/swingy/views/GUI/KeyManager.class
 za/co/wethinkcode/swingy/models/entities/Enemy.class
 za/co/wethinkcode/swingy/views/GUI/GUI.class

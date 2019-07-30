@@ -9,6 +9,7 @@
 /goinfre/tshata/Desktop/swingy1/src/main/java/za/co/wethinkcode/swingy/controllers/DatabaseController.java
 /goinfre/tshata/Desktop/swingy1/src/main/java/za/co/wethinkcode/swingy/controllers/Game.java
 /goinfre/tshata/Desktop/swingy1/src/main/java/za/co/wethinkcode/swingy/views/console/Console.java
+/goinfre/tshata/Desktop/swingy1/src/main/java/za/co/wethinkcode/swingy/views/GUI/GridMap.java
 /goinfre/tshata/Desktop/swingy1/src/main/java/za/co/wethinkcode/swingy/models/entities/AverageHero.java
 /goinfre/tshata/Desktop/swingy1/src/main/java/za/co/wethinkcode/swingy/models/artefacts/Artefact.java
 /goinfre/tshata/Desktop/swingy1/src/main/java/za/co/wethinkcode/swingy/models/entities/SuperHero.java

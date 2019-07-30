@@ -1,5 +1,6 @@
 package za.co.wethinkcode.swingy.controllers;
 
+import za.co.wethinkcode.swingy.views.console.Console;
 import za.co.wethinkcode.swingy.views.GUI.GUI;
 import za.co.wethinkcode.swingy.views.GUI.KeyManager;
 import java.awt.*;
@@ -33,25 +34,30 @@ public class Game implements Runnable{
         keyManager = new KeyManager();
     }
 
-    private void init(){
+    public void init(){
 
-        display = new GUI(title, width, height);
-        display.getFrame().addKeyListener(keyManager);
-        Assets.init();
+    menu();
+//        display = new GUI(title, width, height);
+//        display.getFrame().addKeyListener(keyManager);
+//        Assets.init();
+//
+//        gameState = new State(this) {
+//            @Override
+//            public void update() {
+//
+//            }
+//
+//            @Override
+//            public void render(Graphics g) {
+//
+//            }
+//        };
+//      //  menuState = new MenuState(this);
+//        State.setState(gameState);
+    }
 
-        gameState = new State(this) {
-            @Override
-            public void update() {
-
-            }
-
-            @Override
-            public void render(Graphics g) {
-
-            }
-        };
-      //  menuState = new MenuState(this);
-        State.setState(gameState);
+    private void menu() {
+        Console.menu();
     }
 
 
@@ -76,7 +82,7 @@ public class Game implements Runnable{
         if (State.getState() != null){
             State.getState().render(g);
         }
-
+     //   new GUI.Main().setVisible(true);
         g.drawImage(Assets.hero, 5, 10, null);
         g.drawImage(Assets.enemy, 100, 100, null);
         bs.show();

@@ -1,7 +1,7 @@
 package za.co.wethinkcode.swingy;
 
 import za.co.wethinkcode.swingy.controllers.Game;
-import za.co.wethinkcode.swingy.views.GUI.GUI;
+
 
 import static za.co.wethinkcode.swingy.controllers.DatabaseController.connect;
 
