@@ -27,18 +27,6 @@ public abstract class Hero implements Entity {
         this.id = id;
     }
 
-    public void fight() {
-
-    }
-
-    public void run() {
-
-    }
-
-    public void pickUpArtefact(Artefact artefact) {
-
-    }
-
     public abstract void update();
 
     public abstract void render(Graphics g);

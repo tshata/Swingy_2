@@ -5,6 +5,5 @@ import za.co.wethinkcode.swingy.models.artefacts.Artefact;
 public interface Entity {
     public void fight();
     public void run();
-    public void pickUpArtefact();
-    public Artefact artefact();
+    public void pickUpArtefact(Artefact artefact);
 }
